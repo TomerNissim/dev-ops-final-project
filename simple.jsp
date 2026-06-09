@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <input type="text" id="myInput" placeholder="Type Something ilan and tomer " />
+    <input type="text" id="myInput" placeholder="Type done! " />
 
     <button onclick="sayHello()">Click Me</button>
 
