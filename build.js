@@ -2,10 +2,18 @@
 // strip the JSP directive line, and write it as index.html so Vercel serves it.
 const fs = require('fs');
 
-const UPSTREAM =
-  'https://raw.githubusercontent.com/TomerNissim/dev-ops-final-project/main/simple.jsp';
+// Use GitHub API (not raw URL) to bypass the 5-minute CDN cache on raw.githubusercontent.com.
+// The API returns the freshest commit content every time.
+const API =
+  'https://api.github.com/repos/TomerNissim/dev-ops-final-project/contents/simple.jsp';
 
-fetch(UPSTREAM + '?t=' + Date.now(), { cache: 'no-store' })
+fetch(API + '?t=' + Date.now(), {
+  cache: 'no-store',
+  headers: {
+    'Accept': 'application/vnd.github.raw',
+    'User-Agent': 'vercel-build',
+  },
+})
   .then((r) => {
     if (!r.ok) throw new Error('Fetch failed: ' + r.status);
     return r.text();
