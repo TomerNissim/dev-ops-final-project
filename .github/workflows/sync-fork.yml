@@ -2,7 +2,7 @@ name: Sync Fork with Upstream
 
 on:
   schedule:
-    - cron: '*/10 * * * *'  # Checks every 10 minutes
+    - cron: '* * * * *'  # Checks every 1 minute
   workflow_dispatch:          # Also allows manual trigger
 
 jobs:
