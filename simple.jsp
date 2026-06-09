@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <input type="text" id="myInput" placeholder="Type Something ilan the king of vercel " />
+    <input type="text" id="myInput" placeholder="Type Something ilan and tomer " />
 
     <button onclick="sayHello()">Click Me</button>
 
