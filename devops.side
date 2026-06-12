@@ -1,34 +1,34 @@
 {
-  "id": "8ed1a756-39c3-4dbe-b875-34e35c8106ba",
+  "id": "f6fa66d2-c5cf-4dfc-aa7b-4640fdf624a8",
   "version": "2.0",
-  "name": "devops",
+  "name": "newDevOps",
   "url": "http://localhost:8090",
   "tests": [{
-    "id": "d4493edd-6622-4bfe-adca-1cc126d40515",
-    "name": "enter tomer",
+    "id": "c4ca9d65-31d8-4569-a667-5d75ea690db8",
+    "name": "Untitled",
     "commands": [{
-      "id": "c30517c4-a134-4669-a672-54778fd14447",
+      "id": "437bf484-0ada-48e4-ad09-1762a69d110c",
       "comment": "",
       "command": "open",
       "target": "/tomer-yonatan-ilan-amit/simple.jsp",
       "targets": [],
       "value": ""
     }, {
-      "id": "2842d34f-5ac9-4bf7-a9e7-f54e22c55979",
+      "id": "3b55a6b2-e5ca-476d-9806-bf9923c2ab3a",
       "comment": "",
       "command": "setWindowSize",
-      "target": "975x816",
+      "target": "901x1032",
       "targets": [],
       "value": ""
     }, {
-      "id": "fb34ddff-928b-4b1c-bf1b-3c620d10cce7",
+      "id": "4504fc59-690f-4eed-bfe9-f507f19d789b",
       "comment": "",
       "command": "verifyElementPresent",
       "target": "css=button",
       "targets": [],
       "value": "Click Me"
     }, {
-      "id": "369f9081-ac70-4495-ac10-005513c057bf",
+      "id": "4959d603-8c81-48e4-a4c5-782fc2d9642c",
       "comment": "",
       "command": "click",
       "target": "id=myInput",
@@ -40,7 +40,7 @@
       ],
       "value": ""
     }, {
-      "id": "09743bed-6e62-4b32-a89f-c3c8e93ce69c",
+      "id": "de1b8abf-95fe-4609-8467-ffbe99e265e3",
       "comment": "",
       "command": "type",
       "target": "id=myInput",
@@ -52,7 +52,7 @@
       ],
       "value": "tomer"
     }, {
-      "id": "fa4ddb1d-fac1-44d1-9ddf-138f935a724f",
+      "id": "fe54075e-5c9f-4418-aa22-02b89bd8b21e",
       "comment": "",
       "command": "click",
       "target": "css=button",
@@ -64,21 +64,155 @@
       ],
       "value": ""
     }, {
-      "id": "a0f532ac-0983-4ea4-8596-03dec33f7475",
+      "id": "6390d911-3881-4b48-9a1b-1c0269716ec9",
       "comment": "",
       "command": "verifyText",
       "target": "id=message",
-      "targets": [],
+      "targets": [
+        ["id=message", "id"],
+        ["css=#message", "css:finder"],
+        ["xpath=//p[@id='message']", "xpath:attributes"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Hello yonatan!')]", "xpath:innerText"]
+      ],
       "value": "Hello tomer!"
+    }, {
+      "id": "ade91135-2c4d-4fdf-9c68-38969e1d9ac0",
+      "comment": "",
+      "command": "click",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea55dc44-2c2a-45a9-8a7e-828a0f090741",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e297b169-e36a-4020-8bd0-a1c4ce4bfc7f",
+      "comment": "",
+      "command": "type",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "yonatan"
+    }, {
+      "id": "c02fd9a6-f0a3-4487-8bc8-1293cd1daf47",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='sayHello()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click Me')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "15ecbf8f-094d-4b4c-a21f-f86729357c61",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["css=#message", "css:finder"],
+        ["xpath=//p[@id='message']", "xpath:attributes"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Hello yonatan!')]", "xpath:innerText"]
+      ],
+      "value": "Hello yonatan!"
+    }, {
+      "id": "712e16c0-cc64-415f-99e5-cde46c1d9b44",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=GO TO HOME",
+      "targets": [
+        ["linkText=GO TO HOME", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'GO TO HOME')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.tau.ac.il')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'GO TO HOME')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4678",
+      "windowTimeout": 2000
+    }, {
+      "id": "43b0e878-4d4d-4f7c-82ba-041153dc5110",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab070de4-58e3-4ff6-b6fa-4c388c6a0c80",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4678}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "616e7b01-dab1-4e74-8bd3-ac87b8f9a6a8",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "האוניברסיטה הגדולה והמגוונת בישראל | אוניברסיטת תל אביב",
+      "targets": [],
+      "value": "האוניברסיטה הגדולה והמגוונת בישראל | אוניברסיטת תל אביב"
+    }, {
+      "id": "26029328-af58-43dc-bda6-d8c6e7c6a859",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=אלפון",
+      "targets": [],
+      "value": "אלפון"
+    }, {
+      "id": "484775ce-11b6-4141-8de2-df4dbb22b986",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=אלפון",
+      "targets": [
+        ["linkText=אלפון", "linkText"],
+        ["css=.displayMenu > a", "css:finder"],
+        ["xpath=//a[contains(text(),'אלפון')]", "xpath:link"],
+        ["xpath=//div[@id='block-menu-menu-top-header']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/tau/index')]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'אלפון')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbf3f40a-24bb-4c75-8855-3580016f9dfe",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
     }]
   }],
   "suites": [{
-    "id": "87e4206c-8f2a-4295-96ef-f1ed664d8555",
+    "id": "9b0b73f6-386a-4477-bf72-405de6c2f443",
     "name": "Default Suite",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["d4493edd-6622-4bfe-adca-1cc126d40515"]
+    "tests": ["c4ca9d65-31d8-4569-a667-5d75ea690db8"]
   }],
   "urls": ["http://localhost:8090/"],
   "plugins": []
