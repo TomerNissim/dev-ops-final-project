@@ -169,6 +169,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "28796d4a-f58a-4afd-9d96-d91ca70eeff0",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "3000"
+    }, {
       "id": "616e7b01-dab1-4e74-8bd3-ac87b8f9a6a8",
       "comment": "",
       "command": "assertTitle",
