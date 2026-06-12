@@ -1,102 +1,85 @@
 {
-  "id": "1f57c2de-eddd-4710-a143-6d9e1bc78f04",
+  "id": "8ed1a756-39c3-4dbe-b875-34e35c8106ba",
   "version": "2.0",
-  "name": "dev-ops-final-project-validations",
-  "url": "https://dev-ops-final-project.onrender.com",
-  "tests": [
-    {
-      "id": "43148bfd-0661-4183-97be-330b580018b0",
-      "name": "5 validations - JSP app",
-      "commands": [
-        {
-          "id": "96466b8c-95da-4fa5-ab53-4e2099cea221",
-          "comment": "Open the deployed JSP app",
-          "command": "open",
-          "target": "/nitzan_tomer_yonatan_devops_project/",
-          "targets": [],
-          "value": ""
-        },
-        {
-          "id": "26b40cfe-ab53-48cc-92a7-25ae74dcd2cc",
-          "comment": "",
-          "command": "setWindowSize",
-          "target": "1366x768",
-          "targets": [],
-          "value": ""
-        },
-        {
-          "id": "d237aff0-33eb-42ed-b676-9ff7b9113bdc",
-          "comment": "Validation 1: page title is correct",
-          "command": "assertTitle",
-          "target": "Simple Page",
-          "targets": [],
-          "value": ""
-        },
-        {
-          "id": "16a019f4-4b57-44f2-9e02-e04940780094",
-          "comment": "Validation 2: input textbox exists",
-          "command": "verifyElementPresent",
-          "target": "id=myInput",
-          "targets": [],
-          "value": ""
-        },
-        {
-          "id": "4c20d346-f19d-430e-8afa-7531562c8276",
-          "comment": "Validation 3: button exists and has correct text",
-          "command": "assertText",
-          "target": "css=button",
-          "targets": [],
-          "value": "Click Me"
-        },
-        {
-          "id": "22452a69-1b83-4558-a3dc-a4c604ae3518",
-          "comment": "Validation 4: positive flow - typing a name and clicking the button shows greeting",
-          "command": "type",
-          "target": "id=myInput",
-          "targets": [],
-          "value": "Nitzan"
-        },
-        {
-          "id": "47eb173a-3d8c-4293-82ef-a18509a5eef4",
-          "comment": "",
-          "command": "click",
-          "target": "css=button",
-          "targets": [],
-          "value": ""
-        },
-        {
-          "id": "35d3096d-055a-4c95-baa2-28098c3d6581",
-          "comment": "",
-          "command": "assertText",
-          "target": "id=message",
-          "targets": [],
-          "value": "Hello Nitzan!"
-        },
-        {
-          "id": "e0ccdb51-894c-4840-864c-aada21a22a14",
-          "comment": "Validation 5: link to home/TAU exists",
-          "command": "verifyElementPresent",
-          "target": "css=a[href*='tau.ac.il']",
-          "targets": [],
-          "value": ""
-        }
-      ]
-    }
-  ],
-  "suites": [
-    {
-      "id": "15cb581c-879b-4dac-901e-2592c005c970",
-      "name": "Default Suite",
-      "persistSession": false,
-      "parallel": false,
-      "timeout": 300,
-      "tests": [
-        "43148bfd-0661-4183-97be-330b580018b0"
-      ]
-    }
-  ],
-  "urls": [
-    "https://dev-ops-final-project.onrender.com"
-  ],
+  "name": "devops",
+  "url": "http://localhost:8090",
+  "tests": [{
+    "id": "d4493edd-6622-4bfe-adca-1cc126d40515",
+    "name": "enter tomer",
+    "commands": [{
+      "id": "c30517c4-a134-4669-a672-54778fd14447",
+      "comment": "",
+      "command": "open",
+      "target": "/tomer-yonatan-ilan-amit/simple.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2842d34f-5ac9-4bf7-a9e7-f54e22c55979",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "975x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb34ddff-928b-4b1c-bf1b-3c620d10cce7",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=button",
+      "targets": [],
+      "value": "Click Me"
+    }, {
+      "id": "369f9081-ac70-4495-ac10-005513c057bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09743bed-6e62-4b32-a89f-c3c8e93ce69c",
+      "comment": "",
+      "command": "type",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "tomer"
+    }, {
+      "id": "fa4ddb1d-fac1-44d1-9ddf-138f935a724f",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='sayHello()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click Me')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0f532ac-0983-4ea4-8596-03dec33f7475",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=message",
+      "targets": [],
+      "value": "Hello tomer!"
+    }]
+  }],
+  "suites": [{
+    "id": "87e4206c-8f2a-4295-96ef-f1ed664d8555",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d4493edd-6622-4bfe-adca-1cc126d40515"]
+  }],
+  "urls": ["http://localhost:8090/"],
   "plugins": []
 }
