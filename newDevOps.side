@@ -138,6 +138,20 @@
       ],
       "value": "Hello yonatan!"
     }, {
+      "id": "616e7b01-dab1-4e74-8bd3-ac87b8f9a6a8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=GO TO HOME",
+      "targets": [
+        ["linkText=GO TO HOME", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'GO TO HOME')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.tau.ac.il')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'GO TO HOME')]", "xpath:innerText"]
+      ],
+      "value": "GO TO HOME"
+    }, {
       "id": "712e16c0-cc64-415f-99e5-cde46c1d9b44",
       "comment": "",
       "command": "click",
@@ -169,19 +183,12 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "28796d4a-f58a-4afd-9d96-d91ca70eeff0",
+      "id": "afa797de-5bc1-4c9c-94fd-0fe705b6977d",
       "comment": "",
       "command": "pause",
       "target": "",
       "targets": [],
-      "value": "15000"
-    }, {
-      "id": "616e7b01-dab1-4e74-8bd3-ac87b8f9a6a8",
-      "comment": "",
-      "command": "assertTitle",
-      "target": "האוניברסיטה הגדולה והמגוונת בישראל | אוניברסיטת תל אביב",
-      "targets": [],
-      "value": "האוניברסיטה הגדולה והמגוונת בישראל | אוניברסיטת תל אביב"
+      "value": "30,000"
     }, {
       "id": "26029328-af58-43dc-bda6-d8c6e7c6a859",
       "comment": "",
