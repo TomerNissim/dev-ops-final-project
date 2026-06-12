@@ -138,21 +138,7 @@
       ],
       "value": "Hello yonatan!"
     }, {
-      "id": "616e7b01-dab1-4e74-8bd3-ac87b8f9a6a8",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "linkText=GO TO HOME",
-      "targets": [
-        ["linkText=GO TO HOME", "linkText"],
-        ["css=a", "css:finder"],
-        ["xpath=//a[contains(text(),'GO TO HOME')]", "xpath:link"],
-        ["xpath=//a[contains(@href, 'https://www.tau.ac.il')]", "xpath:href"],
-        ["xpath=//a", "xpath:position"],
-        ["xpath=//a[contains(.,'GO TO HOME')]", "xpath:innerText"]
-      ],
-      "value": "GO TO HOME"
-    }, {
-      "id": "712e16c0-cc64-415f-99e5-cde46c1d9b44",
+      "id": "3c030810-d9e4-4e26-870c-f629a2e0da59",
       "comment": "",
       "command": "click",
       "target": "linkText=GO TO HOME",
@@ -160,64 +146,71 @@
         ["linkText=GO TO HOME", "linkText"],
         ["css=a", "css:finder"],
         ["xpath=//a[contains(text(),'GO TO HOME')]", "xpath:link"],
-        ["xpath=//a[contains(@href, 'https://www.tau.ac.il')]", "xpath:href"],
+        ["xpath=//a[@href='http://localhost:8090/tomer-yonatan-ilan-amit/simple.jsp']", "xpath:href"],
         ["xpath=//a", "xpath:position"],
         ["xpath=//a[contains(.,'GO TO HOME')]", "xpath:innerText"]
       ],
       "value": "",
       "opensWindow": true,
-      "windowHandleName": "win4678",
+      "windowHandleName": "win3678",
       "windowTimeout": 2000
     }, {
-      "id": "43b0e878-4d4d-4f7c-82ba-041153dc5110",
-      "comment": "",
-      "command": "storeWindowHandle",
-      "target": "root",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "ab070de4-58e3-4ff6-b6fa-4c388c6a0c80",
+      "id": "860f60c7-0d37-47af-a7b9-7faf7e4d3593",
       "comment": "",
       "command": "selectWindow",
-      "target": "handle=${win4678}",
+      "target": "handle=${win3678}",
       "targets": [],
       "value": ""
     }, {
-      "id": "afa797de-5bc1-4c9c-94fd-0fe705b6977d",
+      "id": "813bfad0-15c0-4ad6-9e64-5e286174e99b",
       "comment": "",
-      "command": "pause",
-      "target": "",
+      "command": "assertText",
+      "target": "linkText=GO TO HOME",
       "targets": [],
-      "value": "30,000"
+      "value": "GO TO HOME"
     }, {
-      "id": "26029328-af58-43dc-bda6-d8c6e7c6a859",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "linkText=אלפון",
-      "targets": [],
-      "value": "אלפון"
-    }, {
-      "id": "484775ce-11b6-4141-8de2-df4dbb22b986",
+      "id": "a79b4a90-4ebf-4e15-a3e4-854edff1f719",
       "comment": "",
       "command": "click",
-      "target": "linkText=אלפון",
+      "target": "id=myInput",
       "targets": [
-        ["linkText=אלפון", "linkText"],
-        ["css=.displayMenu > a", "css:finder"],
-        ["xpath=//a[contains(text(),'אלפון')]", "xpath:link"],
-        ["xpath=//div[@id='block-menu-menu-top-header']/div/ul/li/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/tau/index')]", "xpath:href"],
-        ["xpath=//div/ul/li/a", "xpath:position"],
-        ["xpath=//a[contains(.,'אלפון')]", "xpath:innerText"]
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "fbf3f40a-24bb-4c75-8855-3580016f9dfe",
+      "id": "cfc56709-078f-4a49-80f2-14eec861707c",
       "comment": "",
-      "command": "selectWindow",
-      "target": "handle=${root}",
-      "targets": [],
+      "command": "type",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "tomer"
+    }, {
+      "id": "3b9dcfbf-24e3-4e52-8b28-6ae0213a6295",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='sayHello()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click Me')]", "xpath:innerText"]
+      ],
       "value": ""
+    }, {
+      "id": "f71ff71e-86a9-44fc-ae92-1e396c5f9930",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=button",
+      "targets": [],
+      "value": "Click Me"
     }]
   }],
   "suites": [{
