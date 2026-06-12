@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <input type="text" id="myInput" placeholder="Type " />
+    <input type="text" id="myInput" placeholder="Type somthing very nice ... " />
 
     <button onclick="sayHello()">Click Me</button>
 
@@ -14,7 +14,7 @@
 
     <br/>
 
-    <a href="https://www.tau.ac.il" target="_blank">GO TO HOME</a>
+    <a href="http://localhost:8090/tomer-yonatan-ilan-amit/simple.jsp" target="_blank">GO TO HOME</a>
 
     <script>
         function sayHello() {

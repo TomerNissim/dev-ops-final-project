@@ -1,0 +1,142 @@
+{
+  "id": "a1b2c3d4-1111-2222-3333-444455556666",
+  "version": "2.0",
+  "name": "MeTA DevOps App - 5 Validations",
+  "url": "https://meta-devops-app.vercel.app",
+  "tests": [{
+    "id": "test01-five-validations",
+    "name": "Five Validations Suite",
+    "commands": [
+      {
+        "id": "cmd-open",
+        "comment": "Open the live Vercel URL",
+        "command": "open",
+        "target": "/",
+        "targets": [],
+        "value": ""
+      },
+      {
+        "id": "cmd-resize",
+        "comment": "Standard viewport",
+        "command": "setWindowSize",
+        "target": "1280x800",
+        "targets": [],
+        "value": ""
+      },
+      {
+        "id": "cmd-v1",
+        "comment": "VALIDATION 1 (POSITIVE - ASSERT): Page title must be 'Simple Page'. Use ASSERT because if the title is wrong, the wrong page loaded - no point continuing.",
+        "command": "assertTitle",
+        "target": "Simple Page",
+        "targets": [],
+        "value": ""
+      },
+      {
+        "id": "cmd-v2",
+        "comment": "VALIDATION 2 (POSITIVE - VERIFY): Input text box exists. Use VERIFY because even if it fails we can still try the next checks (logs the failure but keeps going).",
+        "command": "verifyElementPresent",
+        "target": "id=myInput",
+        "targets": [
+          ["id=myInput", "id"],
+          ["css=#myInput", "css:finder"],
+          ["xpath=//input[@id='myInput']", "xpath:attributes"]
+        ],
+        "value": ""
+      },
+      {
+        "id": "cmd-v3-type",
+        "comment": "VALIDATION 3 setup: type 'Ilan' into the input box",
+        "command": "type",
+        "target": "id=myInput",
+        "targets": [
+          ["id=myInput", "id"],
+          ["css=#myInput", "css:finder"]
+        ],
+        "value": "Ilan"
+      },
+      {
+        "id": "cmd-v3-click",
+        "comment": "VALIDATION 3 setup: click the 'Click Me' button",
+        "command": "click",
+        "target": "css=button",
+        "targets": [
+          ["css=button", "css:finder"],
+          ["xpath=//button", "xpath:position"]
+        ],
+        "value": ""
+      },
+      {
+        "id": "cmd-v3-assert",
+        "comment": "VALIDATION 3 (POSITIVE - ASSERT): After typing 'Ilan' and clicking, message must say 'Hello Ilan!'. This is the core feature - ASSERT.",
+        "command": "assertText",
+        "target": "id=message",
+        "targets": [
+          ["id=message", "id"],
+          ["css=#message", "css:finder"]
+        ],
+        "value": "Hello Ilan!"
+      },
+      {
+        "id": "cmd-v4-clear",
+        "comment": "VALIDATION 4 setup: clear the input (empty value)",
+        "command": "type",
+        "target": "id=myInput",
+        "targets": [
+          ["id=myInput", "id"],
+          ["css=#myInput", "css:finder"]
+        ],
+        "value": ""
+      },
+      {
+        "id": "cmd-v4-refresh",
+        "comment": "Reload page so message paragraph is empty again",
+        "command": "open",
+        "target": "/",
+        "targets": [],
+        "value": ""
+      },
+      {
+        "id": "cmd-v4-click",
+        "comment": "VALIDATION 4 setup: click button while input is empty",
+        "command": "click",
+        "target": "css=button",
+        "targets": [
+          ["css=button", "css:finder"]
+        ],
+        "value": ""
+      },
+      {
+        "id": "cmd-v4-verify",
+        "comment": "VALIDATION 4 (NEGATIVE - VERIFY): When input is empty, message must NOT show. We check the message element is empty. VERIFY because this is a soft check.",
+        "command": "verifyText",
+        "target": "id=message",
+        "targets": [
+          ["id=message", "id"],
+          ["css=#message", "css:finder"]
+        ],
+        "value": ""
+      },
+      {
+        "id": "cmd-v5",
+        "comment": "VALIDATION 5 (POSITIVE - ASSERT): The 'Go to Home' link must point to TAU. ASSERT because a broken link = broken feature.",
+        "command": "assertElementPresent",
+        "target": "css=a[href='https://www.tau.ac.il']",
+        "targets": [
+          ["css=a[href='https://www.tau.ac.il']", "css:finder"],
+          ["xpath=//a[@href='https://www.tau.ac.il']", "xpath:attributes"]
+        ],
+        "value": ""
+      }
+    ]
+  }],
+  "suites": [{
+    "id": "suite01",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["test01-five-validations"]
+  }],
+  "urls": ["https://meta-devops-app.vercel.app/"],
+  "plugins": []
+}

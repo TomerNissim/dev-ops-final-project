@@ -1,0 +1,526 @@
+{
+  "id": "dc307643-d2e6-42fd-865f-206772db867e",
+  "version": "2.0",
+  "name": "devops-publicURL",
+  "url": "https://meta-devops-app.vercel.app",
+  "tests": [{
+    "id": "e29a8f57-9b08-4a47-a406-adc0d36529a9",
+    "name": "devops-URLPUBLIC",
+    "commands": [{
+      "id": "7d2a34a5-fab8-479b-9484-b737eae62a49",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "788e4a9f-f0e2-49db-ba8d-b2418acafb82",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1052x833",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e8b16f7-79d4-4c14-8898-79c5147bc45c",
+      "comment": "",
+      "command": "click",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0564611-8898-43bc-97a0-6c7e236122c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Hello"
+    }, {
+      "id": "e53c44ff-e98b-4878-bacb-0b0741d32041",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='sayHello()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click Me')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78f312e8-4aa6-4137-8666-8350187280e2",
+      "comment": "",
+      "command": "click",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01fe163c-e531-4010-8d19-0bfddb304ec6",
+      "comment": "",
+      "command": "click",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c17c776-ffc8-4619-9b4b-ed9e20e21bbd",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c9ed888-851c-4a54-9f3a-071629e92f54",
+      "comment": "",
+      "command": "type",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "tomer"
+    }, {
+      "id": "f2433a8f-2638-4808-8305-1e69ce328513",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='sayHello()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click Me')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf46240a-c9d3-4472-b9a8-6f3dea16c572",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=GO TO HOME",
+      "targets": [
+        ["linkText=GO TO HOME", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'GO TO HOME')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.tau.ac.il')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'GO TO HOME')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3084",
+      "windowTimeout": 2000
+    }, {
+      "id": "169f66b0-4576-4b1c-bc1c-0cf057ae001e",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3084}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "82fac256-a888-4813-96f9-8ab6f5ddc582",
+    "name": "devops-URLPUBLIC_2",
+    "commands": [{
+      "id": "0508f5fb-51e9-44c5-912e-1ffa2a50a1e6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26eaaf5f-882e-403c-a34e-a8a63f55b562",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1052x833",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3b53235-0e73-4bf5-9341-a598546cdcd9",
+      "comment": "",
+      "command": "click",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5eaa7be2-9005-497d-a14d-a198f6145cbf",
+      "comment": "",
+      "command": "type",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ILAN"
+    }, {
+      "id": "07b63764-bb5b-4b8f-8212-4e067aca3a18",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='sayHello()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click Me')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90f2008e-a8ea-4a69-b0ed-f6cc83aa26ba",
+      "comment": "",
+      "command": "click",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2abb8b82-8364-450f-8e0f-13aa4a307bc2",
+      "comment": "",
+      "command": "click",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3ccc838-7445-49d6-bed8-ad0d760bf9ef",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00e2037d-5b30-4fa8-aa01-646dfb098ee2",
+      "comment": "",
+      "command": "click",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf26a444-5f61-47f7-b1cc-0aff6f7a1ac0",
+      "comment": "",
+      "command": "type",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "tomer"
+    }, {
+      "id": "3822482f-320c-4cec-a6a9-5c67f7d42aa4",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='sayHello()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click Me')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc4fb8d2-4a55-42c3-8be1-853dcb07acd7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=GO TO HOME",
+      "targets": [
+        ["linkText=GO TO HOME", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'GO TO HOME')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.tau.ac.il')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'GO TO HOME')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7754",
+      "windowTimeout": 2000
+    }, {
+      "id": "d9a98585-a0df-4f78-87b4-a265e64738be",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80be514a-2792-4a2a-b793-d11c74f0797a",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7754}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c9dd68d-d6f6-4367-a489-1a5f73e3c801",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "83b55bb5-a08a-4b9c-94a5-4503ce7755bc",
+    "name": "devops-URL-public_3",
+    "commands": [{
+      "id": "5ab6796f-8a9e-49e6-af7e-617bbb7765f1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5301000a-4cce-45fe-829c-690118896d58",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "732x852",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8fc446a7-a8fc-42fd-8cae-ff09f30c12a0",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='sayHello()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click Me')]", "xpath:innerText"]
+      ],
+      "value": "Click Me"
+    }, {
+      "id": "3410adc2-52a2-4e93-98f4-60243c1d5365",
+      "comment": "",
+      "command": "click",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24304175-6443-4da5-bf25-7601108c1d6b",
+      "comment": "",
+      "command": "type",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ILAN"
+    }, {
+      "id": "6a122569-a031-4d18-972d-6fbeafcc778b",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='sayHello()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click Me')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "be58cfc0-a744-491b-a382-2409ba418030",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["css=#message", "css:finder"],
+        ["xpath=//p[@id='message']", "xpath:attributes"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Hello TOMER!')]", "xpath:innerText"]
+      ],
+      "value": "Hello ILAN!"
+    }, {
+      "id": "8a1fb987-6bce-4548-b307-ffe04a61c7b1",
+      "comment": "",
+      "command": "click",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cf27560-c23e-40c1-a26e-2c83b8fc5720",
+      "comment": "",
+      "command": "type",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "TOMER"
+    }, {
+      "id": "2ef2cfb0-225c-4765-bdf5-aba68a60017a",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='sayHello()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click Me')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8824e71d-9f42-408e-9ebe-55f4a686732a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["css=#message", "css:finder"],
+        ["xpath=//p[@id='message']", "xpath:attributes"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Hello TOMER!')]", "xpath:innerText"]
+      ],
+      "value": "Hello TOMER!"
+    }, {
+      "id": "e5ed0d6f-e0c4-45cd-aba0-2017160b73eb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=GO TO HOME",
+      "targets": [
+        ["linkText=GO TO HOME", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'GO TO HOME')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.tau.ac.il')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'GO TO HOME')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5023",
+      "windowTimeout": 2000
+    }, {
+      "id": "ada4d048-78a3-4888-a955-b39ee96dc422",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c15568c6-d108-4537-b50f-c8a9c01608f3",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5023}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "643cbc35-19fe-4744-88c0-7a873c270933",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=אלפון",
+      "targets": [
+        ["linkText=אלפון", "linkText"],
+        ["css=.displayMenu > a", "css:finder"],
+        ["xpath=//a[contains(text(),'אלפון')]", "xpath:link"],
+        ["xpath=//div[@id='block-menu-menu-top-header']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/tau/index')]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'אלפון')]", "xpath:innerText"]
+      ],
+      "value": "אלפון"
+    }, {
+      "id": "f7c298ff-87a6-4c01-810f-415517c3a21f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4496f03b-3405-4cc3-9e46-e6f654f8d94e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=GO TO HOME",
+      "targets": [
+        ["linkText=GO TO HOME", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'GO TO HOME')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.tau.ac.il')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'GO TO HOME')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd96ffa4-11d8-40d8-94b5-7c8902c4dad3",
+      "comment": "",
+      "command": "verifyEditable",
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "de3272b6-5074-4e1a-8f70-5d1dbc410398",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e29a8f57-9b08-4a47-a406-adc0d36529a9"]
+  }],
+  "urls": ["https://meta-devops-app.vercel.app/"],
+  "plugins": []
+}
