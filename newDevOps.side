@@ -174,7 +174,7 @@
       "command": "pause",
       "target": "",
       "targets": [],
-      "value": "3000"
+      "value": "15000"
     }, {
       "id": "616e7b01-dab1-4e74-8bd3-ac87b8f9a6a8",
       "comment": "",
