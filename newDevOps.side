@@ -165,9 +165,14 @@
       "id": "813bfad0-15c0-4ad6-9e64-5e286174e99b",
       "comment": "",
       "command": "assertText",
-      "target": "linkText=GO TO HOME",
-      "targets": [],
-      "value": "GO TO HOME"
+      "target": "id=myInput",
+      "targets": [
+        ["id=myInput", "id"],
+        ["css=#myInput", "css:finder"],
+        ["xpath=//input[@id='myInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
     }, {
       "id": "a79b4a90-4ebf-4e15-a3e4-854edff1f719",
       "comment": "",
@@ -193,6 +198,13 @@
       ],
       "value": "tomer"
     }, {
+      "id": "f71ff71e-86a9-44fc-ae92-1e396c5f9930",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=button",
+      "targets": [],
+      "value": "Click Me"
+    }, {
       "id": "3b9dcfbf-24e3-4e52-8b28-6ae0213a6295",
       "comment": "",
       "command": "click",
@@ -204,13 +216,6 @@
         ["xpath=//button[contains(.,'Click Me')]", "xpath:innerText"]
       ],
       "value": ""
-    }, {
-      "id": "f71ff71e-86a9-44fc-ae92-1e396c5f9930",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "css=button",
-      "targets": [],
-      "value": "Click Me"
     }]
   }],
   "suites": [{
