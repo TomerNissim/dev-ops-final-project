@@ -1,23 +1,22 @@
 # DevOps Final Project: JSP Application & CI/CD Pipeline
 
-This project demonstrates a complete **CI/CD pipeline implementation** for a **Java Server Pages (JSP)** web application, combining classic on-premise tooling (Tomcat + Jenkins) with a modern cloud public endpoint (Vercel) for the bonus internet exposure requirement.
+This project demonstrates a complete **CI/CD pipeline implementation** for a **Java Server Pages (JSP)** web application, built around **Apache Tomcat** and **Jenkins**, with a full automated monitoring and testing suite.
 
 ---
 
 ## 🚀 Project Overview
 
 The application is a simple **JSP-based web page** containing one text input, one button, and one link.
-The infrastructure is fully automated — every code change pushed to GitHub flows through Jenkins, deploys to both **Apache Tomcat** (production) and **Vercel** (public URL), and triggers a full monitoring + testing suite.
+The infrastructure is fully automated — every code change pushed to GitHub flows through Jenkins, deploys to Apache Tomcat, and triggers a full monitoring + testing suite.
 
 **Workflow:**
-`GitHub → Jenkins → Tomcat (local production) + Vercel (public URL) → Monitoring & Testing`
+`GitHub → Jenkins → Tomcat → Monitoring & Testing`
 
 ---
 
 ## 🛠 Technologies & Tools
 
-**Web Server (Production):** Apache Tomcat
-**Public Hosting:** Vercel (bonus public URL exposure)
+**Web Server:** Apache Tomcat
 **CI/CD Engine:** Jenkins (Freestyle Jobs)
 **Source Control:** Git / GitHub
 
@@ -39,22 +38,17 @@ The pipeline is built around several Jenkins jobs, each responsible for a differ
 - Pulls the latest `simple.jsp` from GitHub.
 - Copies it into Tomcat under `webapps/<group-names>/` so the app is reachable at `http://localhost:8080/<group-names>/simple.jsp`.
 
-### 2. Deploy to Vercel (Public URL)
-- A Vercel Deploy Hook is triggered via Jenkins on every commit.
-- A build step converts `simple.jsp` into `index.html` (stripping the JSP directive) so Vercel can serve it as a static page.
-- The live app is publicly available at: **https://meta-devops-app.vercel.app**
-
-### 3. Availability Monitoring (Every 5 minutes)
+### 2. Availability Monitoring (Every 5 minutes)
 - A Jenkins job runs every 5 minutes (`H/5 * * * *`).
-- Calls the **UptimeRobot API** to query the monitor status of the Vercel URL.
+- Calls the **UptimeRobot API** to query the monitor status of the application URL.
 - Build fails if the monitor reports `DOWN`.
 
-### 4. Automated Selenium Tests
+### 3. Automated Selenium Tests
 - Jenkins pulls the `.side` test file from the repo.
 - Runs `selenium-side-runner` in headless Chrome.
-- Validates 5 critical user-flow checks against the live Vercel URL.
+- Validates 5 critical user-flow checks against the live application.
 
-### 5. Performance Tests (Gatling)
+### 4. Performance Tests (Gatling)
 - Three separate Jenkins jobs:
   - **Max Limit Test** – Finds the breaking point of the application.
   - **Load Test** – 5 minutes of sustained traffic at expected user load.
@@ -96,26 +90,6 @@ All Gatling results are exported as HTML reports and PDFs and reviewed for respo
 
 ---
 
-## 🌐 Public URL Bonus
-
-To satisfy the bonus requirement (public IP / internet-accessible application), the application is also deployed to **Vercel** via an automated pipeline:
-
-```
-Group pushes simple.jsp to GitHub
-       ↓ (Jenkins polls every 1 minute)
-Jenkins detects new commit
-       ↓
-Jenkins calls Vercel Deploy Hook (curl)
-       ↓
-Vercel builds → reads simple.jsp from GitHub API
-       ↓ (~30 sec)
-Live app updated at https://meta-devops-app.vercel.app ✅
-```
-
-**Total propagation time: ~1–2 minutes** from `git push` to live URL.
-
----
-
 ## 📋 Prerequisites & Configuration
 
 To replicate this environment:
@@ -131,13 +105,11 @@ To replicate this environment:
 - Gatling CLI
 
 **External Accounts**
-- GitHub (source repo + fork with auto-sync workflow)
-- Vercel (project linked to fork, with Deploy Hook for Jenkins integration)
+- GitHub (source repo)
 - UptimeRobot (monitor + API key for Jenkins job)
 
 **Environment**
 - Windows / Linux server with Jenkins
-- Public Vercel URL: `https://meta-devops-app.vercel.app`
 - Local Tomcat URL: `http://localhost:8080/<group-names>/simple.jsp`
 
 ---
